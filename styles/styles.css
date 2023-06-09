@@ -60,12 +60,17 @@ img {
   margin-left: auto;
   padding: 20px 56px;
   cursor: pointer;
+  transition-property: background-color, transform;
+  transition-duration: 1000ms;
+  transition-timing-function: linear;
+  transition-delay: 250ms;
 }
 
 .button-header:focus,
 .button-header:hover {
   background-color: darkmagenta;
   color: #ffffff;
+  transform: rotate(360deg);
 }
 
 .site-nav {
@@ -81,6 +86,24 @@ img {
   color: var(--titles-color);
   text-decoration: none;
   margin-right: 236px;
+}
+
+.logo:hover {
+  animation: animatelogo 2000ms infinite 1000ms;
+}
+
+@keyframes animatelogo {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .nav-link {
@@ -168,6 +191,24 @@ img {
   position: absolute;
   top: 115.13px;
   right: 882.7px;
+}
+.lamp-svg:hover {
+  animation-name: changefillColor;
+  animation-duration: 3000ms;
+}
+
+@keyframes changefillColor {
+  0% {
+    fill: yellow;
+  }
+
+  50% {
+    fill: orange;
+  }
+
+  100% {
+    fill: yellow;
+  }
 }
 
 .hero-picture {
