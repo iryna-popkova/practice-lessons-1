@@ -10,6 +10,7 @@ body {
   color: var(--primary-text-color);
   background-color: var(--standart-color);
   font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 .list {
   text-decoration: none;
@@ -20,16 +21,21 @@ body {
   text-decoration: none;
 }
 
-.page-header {
-  margin: 55px 0px;
-}
 .header-container {
+  margin-top: 36px;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  max-width: 291px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.page-header {
+  width: 100%;
+  height: auto;
+}
 .container {
-  width: 1378px;
+  width: 291px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -45,65 +51,29 @@ img {
 }
 
 .button-header {
-  width: 312px;
-  height: 70px;
-  border: 2px solid #263238;
-  border-radius: 10px;
-  background-color: var(--standart-color);
-  color: var(--titles-color);
-  border: 2px solid #263238;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-left: auto;
-  padding: 20px 56px;
-  cursor: pointer;
-  transition-property: background-color, transform;
-  transition-duration: 1000ms;
-  transition-timing-function: linear;
-  transition-delay: 250ms;
-}
-
-.button-header:focus,
-.button-header:hover {
-  background-color: darkmagenta;
-  color: #ffffff;
-  transform: rotate(360deg);
+  display: none;
 }
 
 .site-nav {
-  display: flex;
-  gap: 50px;
-  padding: 0;
-  margin: 0;
+  display: none;
 }
 
 .logo {
-  font-size: 36px;
-  line-height: 54px;
   color: var(--titles-color);
+}
+
+.logo-accent {
+  color: #939393;
+}
+
+.logo-link {
+  font-size: 24px;
+  font-family: Poppins;
   text-decoration: none;
-  margin-right: 236px;
-}
-
-.logo:hover {
-  animation: animatelogo 2000ms infinite 1000ms;
-}
-
-@keyframes animatelogo {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.5);
-  }
-
-  100% {
-    transform: scale(1);
-  }
+  margin-right: auto;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .nav-link {
@@ -145,77 +115,85 @@ img {
   color: darkmagenta;
 }
 
-/* hero section */
-
-.hero-container {
-  position: relative;
-}
-.main-title {
-  font-weight: 600;
-  font-size: 64px;
-  line-height: 1.25;
-  color: var(--titles-color);
+.menu-button {
+  display: block;
   padding: 0;
-  margin: 0;
-  max-width: 386px;
+  color: #39515e;
+  background-color: #ffffff;
+  border: none;
+}
+
+.burger-icon {
+  width: 33.5px;
+  height: 19px;
+}
+/* hero section */
+.section-hero {
+  width: 100%;
+  height: auto;
+  margin-bottom: 53px;
+  margin-top: 29px;
+}
+.hero-container {
+  max-width: 291px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-title {
+  display: block;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--titles-color);
+  text-align: center;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  margin-bottom: 20px;
+  max-width: 220px;
 }
 
 .button-start {
-  width: 426px;
-  height: 100px;
+  width: 289px;
+  height: 60px;
   border: 2px solid #263238;
   border-radius: 10px;
   background-color: var(--additional-dark-color);
   color: var(--standart-color);
   font-weight: 400;
-  font-size: 36px;
+  font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   margin-left: auto;
-  padding: 20px 56px;
+  margin-right: auto;
+  margin-top: 33px;
+  margin-bottom: 0;
+  padding: 18px 99px;
   cursor: pointer;
 }
 
 .hero-text {
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 1.5;
-  text-align: left;
+  text-align: center;
   padding: 0;
-  margin-top: 40px;
-  margin-bottom: 60px;
-  max-width: 540px;
+  margin: 0;
+  max-width: 292px;
 }
 .lamp-svg {
+  display: none;
   position: absolute;
   top: 115.13px;
   right: 882.7px;
 }
-.lamp-svg:hover {
-  animation-name: changefillColor;
-  animation-duration: 3000ms;
+.hero-image {
+  width: 299px;
+  height: 299px;
 }
 
-@keyframes changefillColor {
-  0% {
-    fill: yellow;
-  }
-
-  50% {
-    fill: orange;
-  }
-
-  100% {
-    fill: yellow;
-  }
-}
-
-.hero-picture {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
 /* section skills */
 
 .section-title {

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>lesson1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,14 +20,21 @@
     />
 
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
   </head>
 
   <body>
     <header class="page-header">
-      <div class="container header-container">
-        <a class="logo link" href="./lesson1.html"
-          ><img src="./images/logo-header.jpg" alt="britlex word" width="106px"
-        /></a>
+      <div class="header-container">
+        <a class="logo-link" href="./lesson1.html">
+          <span class="logo">Brit</span><span class="logo-accent">lex</span></a
+        >
+        <button class="menu-button">
+          <svg class="burger-icon">
+            <use href="./images/icons.svg#icon-burger-menu-320"></use>
+          </svg>
+        </button>
+
         <nav>
           <ul class="site-nav list">
             <li class="nav-item">
@@ -48,17 +56,21 @@
         </nav>
         <button type="button" class="button-header">Let's Talk</button>
       </div>
+
+      <div class="mobile-menu"></div>
     </header>
 
     <!-- hero-section -->
     <main>
-      <section class="section hero">
-        <div class="hero-container container">
+      <section class="section-hero">
+        <div class="hero-container">
+          <img class="hero-image" src="./images/img1.svg" alt="woman" />
+
           <h1 class="main-title animate__animated animate__tada">
             Learn Any Foreign Language
           </h1>
           <div class="lamp-svg">
-            <svg width="119.65" height="119.65">
+            <svg class="lamp">
               <use href="./images/icons.svg#icon-bulb-icon"></use>
             </svg>
           </div>
@@ -68,16 +80,12 @@
           </p>
 
           <button type="button" class="button-start">Get started</button>
-
-          <div class="hero-picture">
-            <img src="./images/img1.svg" alt="woman" width="654" height="510" />
-          </div>
         </div>
       </section>
 
       <!-- skills-section -->
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="skills-container container">
           <h2 class="section-title">Skills</h2>
           <ul class="skills-list list">
@@ -146,11 +154,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- about us section -->
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="about-us container">
           <h2 class="section-title left">About Us</h2>
           <div class="about-us-picture">
@@ -184,10 +192,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- pricing section -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section-title">Pricing</h2>
           <ul class="price-list">
@@ -243,10 +251,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- contact us section -->
-      <section class="section-contact-us">
+      <!-- <section class="section-contact-us">
         <div class="container contact-us">
           <h2 class="section-title">Contact Us</h2>
           <div class="contact-us-content">
@@ -281,9 +289,9 @@
             />
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- section footer -->
-      <footer class="footer-section">
+      <!-- <footer class="footer-section">
         <div class="container footer">
           <a class="logo-footer link" href="./lesson1.html"
             ><img
@@ -297,7 +305,7 @@
             <li><p class="footer-text">Cookie Policy</p></li>
           </ul>
         </div>
-      </footer>
+      </footer> -->
     </main>
   </body>
 </html>
